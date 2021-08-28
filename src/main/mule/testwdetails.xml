@@ -22,6 +22,7 @@ http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/sc
 	<flow name="testwdetailsFlow" doc:id="5f000eca-97fe-4dbd-9af2-0e98039489af" >
 		<http:listener doc:name="Listener" doc:id="9d7333ff-3e67-4c7d-89e8-fb9b2e667c20" config-ref="HTTP_Listener_config" path="/testw"/>
 		<logger level="INFO" doc:name="Logger" doc:id="b6973f97-7706-4bf9-9189-b0160a6720ec" message="ENTERING INTO ENCRYPTION AND DYNAMIC PICKING "/>
+		<logger level="INFO" doc:name="Logger" doc:id="44a615bd-6fad-426a-b599-d9fb37876205" message="added for git "/>
 		<http:request method="POST" doc:name="Request" doc:id="cb3de003-ca19-4b9e-8986-50894229a148" config-ref="HTTP_Request_configuration" path="/api/predict">
 			<http:headers ><![CDATA[#[output application/java
 ---
